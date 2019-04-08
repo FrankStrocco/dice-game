@@ -43,6 +43,20 @@ main {
     margin: 20px 0 10px;
     position: relative;
 }
+.active {
+    background-color: #f7f7f7;
+}
+.active .player-name {
+    font-weight: 300;
+}
+.active .player-name:after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #eb4d4d;
+    top: -7px;
+    right: 10px;
+}
 .player-score {
     text-align: center;
     font-size: 80px;
@@ -83,9 +97,23 @@ button {
     font-weight: 300;
     font-family: 'lato', sans-serif;
     transition: background-color .3s, color .3s;
+    cursor: pointer;
+}
+i {
+    color: #eb4d4d;
+    display: inline-block;
+    margin: -4px 15px 0 0;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    transition: margin 3s;
+
 }
 button:hover {
     font-weight: 700;
+}
+button:hover i {
+    margin-right: 20px;
 }
 button:focus {
     outline: none;
@@ -98,4 +126,12 @@ button:focus {
 }
 .btn-hold {
     top: 467px;
+}
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    height: 100px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, .1);
+    transform: translateX(-50%);
 }
