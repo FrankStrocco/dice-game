@@ -127,11 +127,27 @@ button:focus {
 .btn-hold {
     top: 467px;
 }
-.dice {
+.die1 {
     position: absolute;
     left: 50%;
     top: 178px;
     height: 100px;
     box-shadow: 0 10px 60px rgba(0, 0, 0, .1);
     transform: translateX(-50%);
+}
+.die2 {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    height: 100px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, .1);
+    transform: translate(-50%, 100%);
+    margin: 15px 0;
+}
+.winner {
+    background-color: cornsilk;
+}
+.winner .player-name, .winner .player-score {
+    font-weight: 700;
+    color: mediumaquamarine;
 }
